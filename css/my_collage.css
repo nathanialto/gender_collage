@@ -7,6 +7,7 @@
     text-align: center;
 }
 
+
 body {
     background-color: #ffffb5;
     font-family: Arial;
@@ -42,7 +43,8 @@ body {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     margin-right: 20px;
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     cursor: move;
     width: fit-content;
     block-size: fit-content;
@@ -83,7 +85,7 @@ body {
 
 
   .mySlides1 img{
-    width: 325px; 
+    width: 350px; 
   }
 
   .column {
