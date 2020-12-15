@@ -36,16 +36,17 @@ body {
     text-align: center;
     text-decoration: none;
   }
-    .green{
+
+  .green{
       background-color: #85e7aa;
     }
 
-    .red{
+  .red{
       background-color: #ff899b;
 
     }
 
-    .yellow{
+  .yellow{
       background-color: #ffed89;
     }
   
