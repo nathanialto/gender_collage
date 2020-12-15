@@ -37,3 +37,13 @@ realFileBtn.addEventListener("change", function(){
     }
 
 })
+
+var canvas = document.getElementById("my_canvas");
+function download_image(){
+  var canvas = document.getElementById("my_canvas");
+  image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+  var link = document.createElement('a');
+  link.download = "my-image.png";
+  link.href = image;
+  link.click();
+}

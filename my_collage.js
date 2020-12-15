@@ -7,6 +7,41 @@ function myFunction(elem) {
     }
 }
 
+function maxwindow(elem) {
+  var el = document.getElementById(elem);
+    if (el.style.width < "35vw"){
+      el.style.width = "35vw"}
+
+    else if (el.className == "column_3") {
+        el.style.width = "25vw";
+      } 
+    else if (el.className == "column_2") {
+        el.style.width = "22.5vw";
+      }
+    else if (el.className == "column_1") {
+        el.style.width = "25vw";
+      }
+
+  }
+
+function maxslider(elem) {
+  var images = document.querySelectorAll(elem)
+  imageArray = Array.prototype.slice.call(images);
+
+  imageArray.forEach(function (img) { // Now itterate over each image in the array
+    if (img.style.width < "35vw") { // If the width is less than 50
+        img.style.width = "35vw" // Set the width
+      }  
+    else if (img.style.width = "40vw") {
+      img.style.width = "25vw"
+    }
+    })}
+
+
+function changecolor(elem) {
+  document.getElementById(elem).className = "blue"
+}
+
 var slideIndex = [1,1];
 var slideId = ["mySlides1", "mySlides2"]
 showDivs(1, 0);

@@ -29,7 +29,6 @@ body {
   .dot-button {
     height: 12px;
     width: 12px;
-    background-color: #ffed89;
     border-radius: 50%;
     display: inline-block;
     padding: 0px 0px 0px 0px;
@@ -37,6 +36,18 @@ body {
     text-align: center;
     text-decoration: none;
   }
+    .green{
+      background-color: #85e7aa;
+    }
+
+    .red{
+      background-color: #ff899b;
+
+    }
+
+    .yellow{
+      background-color: #ffed89;
+    }
   
   .container {
     border: 5px solid #ffc476;
@@ -64,8 +75,7 @@ body {
   
   button:hover {
       border: none;
-      background-color: #5f5f5f;
-
+      background-color: #ac8450;
   }
 
   .prev, .next {
@@ -79,9 +89,19 @@ body {
     border-radius: 0 3px 3px 0;
   }
 
-  .mySlides2 img{
+  .column_1{
+    width: 25vw;
+    object-fit: contain;
+  }
+
+  .column_2{
+    width: 22.5vw;
+  }
+  
+  .column_3{
     width: 25vw;
   }
+
 
   .mySlides1 img{
     width: 25vw; 
@@ -96,3 +116,8 @@ body {
     clear: both;
     display: table;
   }
+
+  .w-100 {
+    width: 60vw;
+ }
+  

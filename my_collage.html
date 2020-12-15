@@ -17,38 +17,40 @@
 
         <!-- book slider -->
       <div class="column">
-        <div class="container draggable">
+        <div class="container draggable" id="booklet_window">
             <div class="top handle">
-                <button type="button" class="dot-button" onclick="myFunction('booklet')"></button>
+                <button type="button" class="dot-button red" onclick="myFunction('booklet_window')"></button>
+                <button type="button" class="dot-button yellow" onclick="myFunction('booklet')"></button>
+                <button type="button" class="dot-button green" onclick="maxslider('.book_page')"></button>
             </div>
             <div class="content" id="booklet">
-                <div class="w3-content w3-display-container">
+                <div class="w3-content w3-display-container" id="booklet_all">
                     <div class="mySlides2">
-                        <img src="img/book_1.PNG">
+                        <img src="img/book_1.PNG" class="column_1 book_page">
                     </div>
         
                     <div class="mySlides2">
-                        <img src="img/book_2.PNG">
+                        <img src="img/book_2.PNG" class="column_1 book_page" >
                     </div>
         
                     <div class="mySlides2">
-                        <img src="img/book_3.PNG">
+                        <img src="img/book_3.PNG" class="column_1 book_page">
                     </div>
 
                     <div class="mySlides2">
-                        <img src="img/book_4.PNG">
+                        <img src="img/book_4.PNG" class="column_1 book_page">
                     </div>
 
                     <div class="mySlides2">
-                        <img src="img/book_5.PNG">
+                        <img src="img/book_5.PNG" class="column_1 book_page">
                     </div>
 
                     <div class="mySlides2">
-                        <img src="img/book_6.PNG">
+                        <img src="img/book_6.PNG" class="column_1 book_page">
                     </div>
 
                     <div class="mySlides2">
-                        <img src="img/book_7.PNG">
+                        <img src="img/book_7.PNG" class="column_1 book_page">
                     </div>
                     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
                     <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
@@ -57,12 +59,14 @@
         </div>
 
         <!-- my gender is tiktok-->
-        <div class="container draggable">
+        <div class="container draggable" id="my_gender_is_window">
             <div class="top handle">
-                <button type="button" class="dot-button" onclick="myFunction('my_gender_is')"></button>
+                <button type="button" class="dot-button red" onclick="myFunction('my_gender_is_window')"></button>
+                <button type="button" class="dot-button yellow" onclick="myFunction('my_gender_is')"></button>
+                <button type="button" class="dot-button green" onclick="maxwindow('my_gender_is_video')"></button>
             </div>
             <div class="content" id="my_gender_is">
-                <video style="width: 25vw;" controls>
+                <video class="column_1" id="my_gender_is_video" controls>
                     <source src="img/tiktok_1.MP4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -70,31 +74,38 @@
         </div>
 
         <!--poggers-->
-        <div class="container draggable">
+        <div class="container draggable" id="poggers_window">
             <div class="top handle">
-                <button type="button" class="dot-button" onclick="myFunction('poggers')"></button>
+                <button type="button" class="dot-button red" onclick="myFunction('poggers_window')"></button>
+                <button type="button" class="dot-button yellow" onclick="myFunction('poggers')"></button>
+                <button type="button" class="dot-button green" onclick="maxwindow('poggers_img')"></button>
+
             </div>
             <div class="content" id="poggers">
-                <img src="img/meme_3.JPG" style="width: 25vw;">
+                <img src="img/meme_3.JPG" class="column_1" id="poggers_img">
             </div>
         </div>
 
         <!-- maggie convo -->
-        <div class="container draggable">
+        <div class="container draggable" id="love_window">
             <div class="top handle">
-            <button type="button" class="dot-button" onclick="myFunction('love')"></button>
+                <button type="button" class="dot-button red" onclick="myFunction('love_window')"></button>
+                <button type="button" class="dot-button yellow" onclick="myFunction('love')"></button>
+                <button type="button" class="dot-button green" onclick="maxwindow('love_img')"></button>
             </div>
             <div class="content" id="love">
-                <img src="img/nb_love.jpg" style="width: 25vw;">
+                <img src="img/nb_love.jpg" class="column_1" id="love_img">
             </div>
         </div>
         <!--blob-->
-        <div class="container draggable">
+        <div class="container draggable" id="blob_window">
             <div class="top handle">
-                <button type="button" class="dot-button" onclick="myFunction('blob')"></button>
+                <button type="button" class="dot-button red" onclick="myFunction('blob_window')"></button>
+                <button type="button" class="dot-button yellow" onclick="myFunction('blob')"></button>
+                <button type="button" class="dot-button green" onclick="maxwindow('blob_img')"></button>              
             </div>
             <div class="content" id="blob">
-                <img src="img/blob.gif" style="width: 25vw;">
+                <img src="img/blob.gif" class="column_1" id="blob_img">
             </div>
         </div>
 
@@ -102,46 +113,53 @@
 
       <div class="column">
         <!-- playlist -->
-        <div class="container draggable">
+        <div class="container draggable" id="playlist_window">
             <div class="top handle">
-              <button type="button" class="dot-button" onclick="myFunction('playlist')"></button>
+                <button type="button" class="dot-button red" onclick="myFunction('playlist_window')"></button>
+                <button type="button" class="dot-button yellow" onclick="myFunction('playlist')"></button>
             </div>
             <div class="content" id="playlist">
                 <iframe src="https://open.spotify.com/embed/playlist/5MtlP3JFAeq50aeQSOkfsA" 
-                style="width: 22.5vw; height: 23vw;" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                class="column_2" style="height: 23vw;" id="playlist_img" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
         </div>
 
         <!-- pomegranate -->
-        <div class="container draggable">
+        <div class="container draggable" id="pomegranate_window">
             <div class="top handle">
-              <button type="button" class="dot-button" onclick="myFunction('pomegranate')"></button>
+              <button type="button" class="dot-button red" onclick="myFunction('pomegranate_window')"></button>
+              <button type="button" class="dot-button yellow" onclick="myFunction('pomegranate')"></button>
+              <button type="button" class="dot-button green" onclick="maxwindow('pomegranate_img')"></button>
             </div>
             <div class="content" id="pomegranate">
-                <img src="img/pomegranate.GIF" style="width: 22.5vw;">
+                <img src="img/pomegranate.GIF" class="column_2" id="pomegranate_img">
             </div>
         </div>
 
         <!-- tiktok: I am a twink and a lesbian -->
-        <div class="container draggable">
+        <div class="container draggable" id="tiktok_4_window">
             <div class="top handle">
-                <button type="button" class="dot-button" onclick="myFunction('tiktok_4')"></button>
+                <button type="button" class="dot-button red" onclick="myFunction('tiktok_4_window')"></button>
+                <button type="button" class="dot-button yellow" onclick="myFunction('tiktok_4')"></button>
+                <button type="button" class="dot-button green" onclick="maxwindow('tiktok_4_video')"></button>
             </div>
-            <div class="content" id="tiktok_4" style="max-width:400px;">
-                <video style="width: 22.5vw;" controls>
-                    <source src="img/tiktok_4.MP4" type="video/mp4">
+            <div class="content" id="tiktok_4">
+                <video class="column_2" id="tiktok_4_video" controls>
+                    <source src="img/tiktok_4.MP4" type="video/mp4" >
                     Your browser does not support the video tag.
                 </video>
             </div>
         </div>
         
         <!--this is my gender-->
-        <div class="container draggable">
+        <div class="container draggable" id="this_gender_window">
             <div class="top handle">
-                <button type="button" class="dot-button" onclick="myFunction('this-gender')"></button>
+                <button type="button" class="dot-button red" onclick="myFunction('this_gender_window')"></button>                
+                <button type="button" class="dot-button yellow" onclick="myFunction('this-gender')"></button>
+                <button type="button" class="dot-button green" onclick="maxwindow('this_gender_img')"></button>
             </div>
             <div class="content" id="this-gender">
-                <img src="img/this_is_my_gender.jpg" style="width: 22.5vw;">
+                <img src="img/this_is_my_gender.jpg" class="column_2" id="this_gender_img">
             </div>
         </div>
 
@@ -150,22 +168,26 @@
 
       <div class="column">
         <!--What your non-binnery-->
-        <div class="container draggable">
+        <div class="container draggable" id="non-binnery-window">
             <div class="top handle">
-                <button type="button" class="dot-button" onclick="myFunction('non-binnery')"></button>
+                <button type="button" class="dot-button red" onclick="myFunction('non-binnery-window')"></button>                
+                <button type="button" class="dot-button yellow" onclick="myFunction('non-binnery')"></button>
+                <button type="button" class="dot-button green" onclick="maxwindow('non-binnery-img')"></button>
             </div>
             <div class="content" id="non-binnery">
-                <img src="img/meme_2.jpg" style="width: 25vw;">
+                <img src="img/meme_2.jpg" class="column_3" id="non-binnery-img">
             </div>
         </div>
 
         <!-- tiktok: they changed their pronouns -->
-        <div class="container draggable">
+        <div class="container draggable" id="tiktok_3_window">
             <div class="top handle">
-                <button type="button" class="dot-button" onclick="myFunction('tiktok_3')"></button>
+                <button type="button" class="dot-button red" onclick="myFunction('tiktok_3_window')"></button>                
+                <button type="button" class="dot-button yellow" onclick="myFunction('tiktok_3')"></button>
+                <button type="button" class="dot-button green" onclick="maxwindow('tiktok_3_video')"></button>
             </div>
             <div class="content" id="tiktok_3">
-                <video style="width: 25vw;" controls>
+                <video class="column_3" id="tiktok_3_video" controls>
                     <source src="img/tiktok_3.MP4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -173,12 +195,14 @@
         </div>
 
         <!-- dysphoria video -->
-        <div class="container draggable">
+        <div class="container draggable" id="dysphoria_window">
             <div class="top handle">
-              <button type="button" class="dot-button" onclick="myFunction('dysphoria')"></button>
+                <button type="button" class="dot-button red" onclick="myFunction('dysphoria_window')"></button>                
+                <button type="button" class="dot-button yellow" onclick="myFunction('dysphoria')"></button>
+                <button type="button" class="dot-button green" onclick="maxwindow('dysphoria_video')"></button>
             </div>
             <div class="content" id="dysphoria">
-                <video style="width: 25vw;" controls>
+                <video class="column_3" id="dysphoria_video" controls>
                     <source src="img/dysphoria.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
@@ -186,27 +210,29 @@
         </div>
 
        <!-- tweet slider -->
-        <div class="container draggable">
+        <div class="container draggable" id="tweets_window">
             <div class="top handle">
-                <button type="button" class="dot-button" onclick="myFunction('tweets')"></button>
+                <button type="button" class="dot-button red" onclick="myFunction('tweets_window')"></button>
+                <button type="button" class="dot-button yellow" onclick="myFunction('tweets')"></button>
+                <button type="button" class="dot-button green" onclick="maxslider('.twt')"></button>
             </div>
             <div class="content" id="tweets">
                 <div class="w3-content w3-display-container">
 
                     <div class="mySlides1">
-                    <img src="img/tweet_1.jpg">
+                    <img src="img/tweet_1.jpg" class="twt">
                     </div>
 
                     <div class="mySlides1">
-                        <img src="img/tweet_3.jpg">
+                        <img src="img/tweet_3.jpg" class="twt">
                     </div>
 
                     <div class="mySlides1">
-                        <img src="img/tweet_4.jpg">
+                        <img src="img/tweet_4.jpg" class="twt">
                     </div>
 
                     <div class="mySlides1">
-                        <img src="img/meme_1.jpg">
+                        <img src="img/meme_1.jpg" class="twt">
                     </div>
                     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
                     <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
@@ -215,12 +241,15 @@
         </div>
 
         <!-- dakota johnson kitchen -->
-        <div class="container draggable">
+        <div class="container draggable" id="kitchen_window">
             <div class="top handle">
-            <button type="button" class="dot-button" onclick="myFunction('kitchen')"></button>
+                <button type="button" class="dot-button red" onclick="myFunction('kitchen_window')"></button>                
+                <button type="button" class="dot-button yellow" onclick="myFunction('kitchen')"></button>
+                <button type="button" class="dot-button green" onclick="maxwindow('kitchen_img')"></button>
+                
             </div>
             <div class="content" id="kitchen">
-                <img src="img/dakota_johnson_kitchen.jpg" style="width: 25vw;">
+                <img src="img/dakota_johnson_kitchen.jpg" id="kitchen_img" class="column_3">
             </div>
         </div>
         
